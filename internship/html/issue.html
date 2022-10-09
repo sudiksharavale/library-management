@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Librarian Panel</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/issue.css">
+</head>
+<body>
+<header>
+<div class="nav">
+<p>LIBRARIAN PANEL</p>
+<img src="../images/bvit.png">
+<p id="user">Bvit</p>
+<a href="index.html" style="text-decoration: none;"><div id="logout" style="text-decoration: none;">Logout</div></a>
+
+</div>
+<nav>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="profile.html">My Profile</a></li>
+<li><a href="issue.html">Issue Books</a></li>
+<li><a href="issued.html">View Issued Books</a></li>
+<li><a href="manageuser.html">Manage Users</a></li>
+<li><a href="bookmanage.html">Book Management</a></li>
+<li><a href="help.html">Help</a></li>
+<li><a href="about.html">About Software</a></li>
+
+</ul>
+</nav>
+</header>
+<div class="sectionbox">
+<section>
+<div id="loginpic">
+<img src="../images/login1.png" alt="Book Image" height="10%" width="10%">
+ </div>
+
+<form action="../php/issueinsert.php" method="post">
+ <label>Book No</label>
+<input type="text" id="bno" name="bookno" placeholder="Book No."><br>
+ <label>Book Title</label>
+<input type="text" id="bno" name="bookname" placeholder="Book Name"><br>
+<label>Quantity</label>
+<input type="text" id="quantity" name="quantity" placeholder="Quantity"><br>
+ <label>Price</label>
+<input type="text" id="price" name="price" placeholder="Price"><br>
+ <label>User Id</label>
+<input type="text" id="userid" name="userid" placeholder="User Id"><br>
+ <label>Name</label>
+<input type="text" id="name" name="uname" placeholder="User Name"><br>
+ <label>Phone</label>
+<input type="text" id="phone" name="phone" placeholder="Phone"><br>
+ <label>Email</label>
+<input type="text" id="email" name="email" placeholder="Email"><br>
+ <label>Address</label>
+<input type="text" id="add" name="address" placeholder="Address"><br>
+<input type="submit" value="submit">
+</form>
+</section>
+</div>>
+</body>
+</html>

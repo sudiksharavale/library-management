@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Login to College</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/login.css">
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<form class="box" action="dashboard.html" onsubmit="return login()">
+<h1>LOGIN</h1>
+<input type="text" name="us" id='u' placeholder="User Id" required>
+<input type="password" name="pa" id='p' placeholder="Password" required>
+<input type="submit" name="Submit" value="LOGIN">
+</form>
+</body>
+<script>
+function login()
+{
+let user=document.getElementById('u').value;
+let pass=document.getElementById('p').value;
+if((user=="bvit") &&(pass=="bvit"))
+{
+return true;
+}
+else
+{
+alert('Invalid Username/Password');
+return false;
+}
+}
+</script>	
+</html>
